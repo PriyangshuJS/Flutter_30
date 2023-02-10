@@ -11,7 +11,14 @@ class Homepage extends StatelessWidget {
         title: Text("APP 1"),
       ),
       body: Center(
-        child: Text("Welcome to the APP ${num} $s"),
+        child: Text(
+          "Welcome to the APP ${num} $s",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.cyanAccent,
+            fontSize: 15,
+          ),
+        ),
       ),
       drawer: Drawer(),
     );
