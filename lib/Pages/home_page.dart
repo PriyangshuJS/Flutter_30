@@ -15,7 +15,7 @@ class Homepage extends StatelessWidget {
           "Welcome to the APP ${num} $s",
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Colors.cyanAccent,
+            color: Colors.purple,
             fontSize: 15,
           ),
         ),
