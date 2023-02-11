@@ -8,7 +8,7 @@ class LoginPage extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 40.0,
+              height: 50.0,
             ),
             Image.asset(
               "assets/images/Login_img.png",
@@ -41,7 +41,7 @@ class LoginPage extends StatelessWidget {
                         labelText: "Password", hintText: "Enter Password"),
                   ),
                   SizedBox(
-                    height: 20.0,
+                    height: 30.0,
                   ),
                   ElevatedButton(
                     child: Text("Login"),
