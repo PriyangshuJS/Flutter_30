@@ -1,3 +1,4 @@
+import 'package:app1/Utility/routes.dart';
 import 'package:flutter/material.dart';
 import 'Pages/home_page.dart';
 import 'Pages/Login_pge.dart';
@@ -20,9 +21,9 @@ class App1 extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
 
       routes: {
-        "/": (context) =>
-            LoginPage(), // "/" This is default, line 12 is no longer needed.
-        "/login": (context) => LoginPage(),
+        "/": (context) => LoginPage(),
+        MyRoutes.homeroute: (context) => Homepage(),
+        MyRoutes.loginroute: (context) => LoginPage(),
       },
     );
   }
