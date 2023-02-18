@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
   var nu = 1;
-  String s = "Learning from Codepur.";
+  String s = "Work in Progress!!.";
 
   @override
   Widget build(BuildContext context) {
@@ -10,13 +10,38 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text("APP 1"),
       ),
-      body: Center(
-        child: Text(
-          "Welcome to the APP ${num} $s",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.purple,
-            fontSize: 15,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 200.0,
+              ),
+              Text(
+                "Under Construction, ${num} $s",
+                style: TextStyle(
+                  fontSize: 17,
+                ),
+              ),
+              SizedBox(
+                height: 50.0,
+              ),
+              Image.asset(
+                "assets/images/construction.png",
+                fit: BoxFit.contain,
+                height: 300,
+              ),
+              SizedBox(
+                height: 50.0,
+              ),
+              Text(
+                "Comming Soon",
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            ],
           ),
         ),
       ),
