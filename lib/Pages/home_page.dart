@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 class Homepage extends StatelessWidget {
   var nu = 1;
   String s = "Work in Progress!!.";
@@ -9,6 +11,7 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("APP 1"),
+        backgroundColor: Color.fromARGB(255, 31, 88, 173),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -45,7 +48,7 @@ class Homepage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
