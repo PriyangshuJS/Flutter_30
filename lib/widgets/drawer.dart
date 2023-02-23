@@ -8,7 +8,7 @@ class MyDrawer extends StatelessWidget {
         "https://spng.pngfind.com/pngs/s/292-2924933_image-result-for-png-file-user-icon-black.png";
     return Drawer(
       child: Container(
-        color: Color.fromARGB(255, 31, 88, 173),
+        color: Color.fromARGB(255, 48, 131, 255),
         child: ListView(
           padding: EdgeInsets.zero,
           children: [

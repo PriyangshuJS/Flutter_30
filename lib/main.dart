@@ -1,4 +1,5 @@
 import 'package:app1/Utility/routes.dart';
+import 'package:app1/widgets/themes.dart';
 import 'package:flutter/material.dart';
 import 'Pages/home_page.dart';
 import 'Pages/Login_pge.dart';
@@ -14,13 +15,8 @@ class App1 extends StatelessWidget {
     return MaterialApp(
       //   home: Homepage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: MyThemes.lighttheme(context),
       debugShowCheckedModeBanner: false,
-
       initialRoute: MyRoutes.homeroute,
       routes: {
         "/": (context) => LoginPage(),
